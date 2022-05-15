@@ -1,0 +1,168 @@
+.ContainerHeader {
+  width: "100%";
+  height: 50px;
+  background-color: blueviolet;
+}
+
+.content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white;
+  width: '95%';
+
+}
+
+.TheA {
+  color: white;
+  text-decoration: none;
+  white-space: normal;
+
+
+}
+
+.TheAB {
+  color: white;
+  text-decoration: none;
+  background-color: #caafca;
+  height: 34,
+}
+
+.col4 {
+  width: "34%";
+  float: left;
+}
+
+.col2 {
+  width: "16%";
+  float: left;
+}
+
+.nhanqc {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  height: 35px;
+  padding-top: 6px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  border-style: solid;
+  border-radius: 7px;
+  border-width: 1px;
+  border-color: azure;
+}
+
+.image {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+.textBig {
+  font-size: 57px;
+
+
+}
+
+.dropbtn {
+  background-color: #17122b;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 7px;
+  border-width: 0.2;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #e9d8f4;
+  min-width: 220px;
+  min-height: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-left: 10px;
+  text-align: start;
+  justify-content: center;
+  border-radius: 5px;
+
+
+}
+
+.dropdown-content a {
+  color: black;
+  min-width: 220px;
+  text-decoration: none;
+  display: block;
+  height: 40px;
+  padding-left: 5px;
+  margin: 4px;
+  padding-top: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  float: left;
+}
+
+.dropdown-content a:hover {
+  min-width: 220px;
+  background-color: none;
+  color: white;
+  background-color: #984eca;
+  float: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #230D3D;
+}
+
+.boderCard {
+  border-top: 1.5px dashed white;
+  background-color: #17122b;
+}
+
+.xoay {
+  transform: rotate(90deg);
+  width: 23px;
+  height: 20px;
+}
+
+.buttontim {
+  width: 100%;
+  height: 100%;
+  text-align: start;
+  background-color: #b064fe;
+  border-radius: 6px;
+  font-weight: "bold";
+  padding-top: 8px;
+  padding-bottom: 18px;
+  margin-top: -8px;
+  font-size: 15;
+  color: white;
+}
+
+.buttontim:hover {
+  background-color: whitesmoke;
+  color: #984eca;
+}
+
+.cardHover div:hover {
+  width: "33%";
+  margin-top: -5px;
+
+}
