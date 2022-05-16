@@ -105,7 +105,7 @@ class Header extends Component {
                   height: 34,
                 }}
               >
-                <div class="row">
+                {/* <div class="row">
                   <a
                     href="https://explorer.solana.com/address/PFo38bhqnYn9ntEs6GHN5LAi26QX1tBxMabmqu5LtX9"
                     class="TheA"
@@ -137,7 +137,7 @@ class Header extends Component {
                       </div>
                     </div>
                   </a>
-                </div>
+                </div> */}
               </div>
 
               <div
