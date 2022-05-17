@@ -165,9 +165,16 @@ class ContainerCard extends Component {
               }}
             />
             <CardBody style={{ width: "96%", margin: "auto" }}>
-              <CardTitle tag="h3" style={{ paddingTop: 10 }}>
+              <CardTitle
+                tag="h3"
+                style={{ paddingTop: 10, fontSize: 24, fontWeight: 700 }}
+              >
                 Edensol&ensp;
-                <FontAwesomeIcon icon={faCheckCircle} color="blueviolet" />
+                <FontAwesomeIcon
+                  icon={faCheckCircle}
+                  color="blueviolet"
+                  size="xs"
+                />
               </CardTitle>
               <CardSubtitle
                 className="mb-2 text-muted"
@@ -261,9 +268,16 @@ class ContainerCard extends Component {
               }}
             />
             <CardBody style={{ width: "96%", margin: "auto" }}>
-              <CardTitle tag="h3" style={{ paddingTop: 10 }}>
+              <CardTitle
+                tag="h3"
+                style={{ paddingTop: 10, fontSize: 24, fontWeight: 700 }}
+              >
                 Alf Protocol&ensp;
-                <FontAwesomeIcon icon={faCheckCircle} color="blueviolet" />
+                <FontAwesomeIcon
+                  icon={faCheckCircle}
+                  color="blueviolet"
+                  size="xs"
+                />
               </CardTitle>
               <CardSubtitle
                 className="mb-2 text-muted"
