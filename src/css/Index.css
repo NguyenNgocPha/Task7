@@ -24,8 +24,14 @@
 .TheAB {
   color: white;
   text-decoration: none;
-  background-color: #caafca;
+  font-size: 12px;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity));
   height: 34,
+
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5 !important;
 }
 
 .col4 {
@@ -57,13 +63,44 @@
 
 .image {
   position: absolute;
-  top: 10px;
-  right: 0px;
+  top: -25px;
+  right: -25px;
 }
 
 .textBig {
-  font-size: 57px;
+  font-size: 60px;
+  line-height: 1 !important;
+  letter-spacing: -.025em !important;
+  font-weight: 800 !important;
 
+}
+
+.textBig2 {
+  font-size: 60px;
+  font-weight: 800 !important;
+  letter-spacing: -.025em !important;
+  line-height: 1.5 !important;
+}
+
+.text-gray-200,
+.text-white {
+  --tw-text-opacity: 0.5 !important;
+}
+
+.textMedium {
+  color: rgb(255 255 255/var(--tw-bg-opacity));
+  font-weight: 500 !important;
+  font-size: 20px;
+  line-height: 1.75rem !important;
+
+}
+
+.textMedium2 {
+  color: rgb(255 255 255/var(--tw-bg-opacity));
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+  margin-bottom: 0.75rem !important;
 
 }
 
@@ -75,8 +112,8 @@
   border-radius: 7px;
   border-width: 0.2;
   cursor: pointer;
-  height: 50px;
-  width: 200px;
+  height: 48px;
+  width: 194px;
 }
 
 .dropdown {
@@ -88,8 +125,8 @@
   display: none;
   position: absolute;
   right: 0;
-  background-color: #e9d8f4;
-  min-width: 220px;
+  background-color: white;
+  min-width: 194px;
   min-height: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -119,7 +156,7 @@
   min-width: 220px;
   background-color: none;
   color: white;
-  background-color: #984eca;
+  background-color: #A347D1;
   float: left;
 }
 
@@ -136,24 +173,20 @@
   background-color: #17122b;
 }
 
-.xoay {
-  transform: rotate(90deg);
-  width: 23px;
-  height: 20px;
-}
+
 
 .buttontim {
-  width: 100%;
-  height: 100%;
-  text-align: start;
+  margin-top: 3px;
+  width: 164px;
+  height: 42px;
+  text-align: center;
   background-color: #b064fe;
   border-radius: 6px;
-  font-weight: "bold";
-  padding-top: 8px;
-  padding-bottom: 18px;
-  margin-top: -8px;
-  font-size: 15;
-  color: white;
+  border-width: 1px;
+  margin-left: 21px;
+  font-weight: 500 !important;
+  font-size: 16px;
+  color: rgb(255 255 255);
 }
 
 .buttontim:hover {
@@ -170,5 +203,28 @@
 .cardHtuyyyyy {
   width: "33%";
   margin-top: -5px;
+
+}
+
+.amenu {
+  align-items: center;
+  text-decoration: none;
+  white-space: normal;
+  font-weight: 700 !important;
+  font-size: 14px;
+  color: rgb(229, 231, 235);
+}
+
+.ContainenButon {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 800;
+}
+
+.ContainenButon :hover {
+  background-color: white;
+  color: #984eca;
 
 }
