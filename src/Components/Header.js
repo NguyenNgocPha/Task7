@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import "../css/Index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
-
-import {
-  faCheckCircle,
-  faClipboardCheck,
-  faUnlockKeyhole,
-} from "@fortawesome/free-solid-svg-icons";
-
-import { faApple, faWindows } from "@fortawesome/free-brands-svg-icons";
+import CricelCheck from "../accset/CricelCheck.svg";
+import squareCheck from "../accset/squareCheck.svg";
+import apple from "../accset/apple.svg";
+import Look from "../accset/Look.svg";
+import window from "../accset/window.svg";
+import telegram from "../accset/telegram.svg";
 
 class Header extends Component {
   render() {
@@ -55,19 +53,17 @@ class Header extends Component {
                   <div class="row">
                     <div
                       style={{
-                        textAlign: "center",
                         paddingRight: 0,
+                        marginTop: -2,
                         width: 20,
                       }}
                     >
-                      <i
-                        class="fa-regular fa-circle-check"
-                        style={{
-                          borderColor: "white",
-                          borderWidth: "1px",
-                          fontSize: 12,
-                        }}
-                      ></i>
+                      <img
+                        src={CricelCheck}
+                        height={15}
+                        width={16}
+                        class="circle"
+                      />
                     </div>
                     <div
                       class="col-11"
@@ -114,31 +110,32 @@ class Header extends Component {
                     textAlign: "start",
                   }}
                 >
-                  <i
-                    class="fa-solid fa-clipboard-check"
-                    style={{
-                      borderColor: "white",
-                      borderWidth: "1px",
-                      fontSize: 12,
-                    }}
-                  ></i>{" "}
+                  <img
+                    src={squareCheck}
+                    height={16}
+                    width={16}
+                    class="circle"
+                    style={{ marginTop: -4 }}
+                  />
                   &nbsp;Add to Bookmark
                 </div>
                 <div
                   class="TheA "
                   style={{
-                    width: "29%",
+                    width: "27%",
                     textAlign: "start",
                     paddingTop: 1,
+                    paddingLeft: 4,
+                    paddingRight: 0,
                   }}
                 >
-                  <FontAwesomeIcon
-                    icon={faUnlockKeyhole}
-                    size="1x"
-                    color="white"
-                    className="flex"
-                    paddingLeft={0}
-                  />{" "}
+                  <img
+                    src={Look}
+                    height={16}
+                    width={16}
+                    class="circle"
+                    style={{ marginTop: -4, marginRight: 4 }}
+                  />
                   parasol.finance
                 </div>
                 <div
@@ -146,17 +143,18 @@ class Header extends Component {
                   style={{
                     borderTopLeftRadius: 200,
                     borderBottomLeftRadius: 200,
-                    width: 94,
+                    width: 95,
                     height: 24,
-                    paddingLeft: 0,
+                    paddingLeft: 5,
                     paddingTop: 2,
                   }}
                 >
-                  <FontAwesomeIcon
-                    icon={faWindows}
-                    size="1x"
-                    color="white"
-                    className="flex"
+                  <img
+                    src={window}
+                    height={16}
+                    width={16}
+                    class="circle"
+                    style={{ marginTop: -4, marginRight: 4 }}
                   />{" "}
                   &nbsp;CTRL+C
                 </div>
@@ -167,17 +165,18 @@ class Header extends Component {
                   style={{
                     borderTopRightRadius: 200,
                     borderBottomRightRadius: 200,
-                    width: 91,
+                    width: 95,
                     paddingTop: 2,
-                    paddingLeft: 0,
+                    paddingLeft: 5,
                     height: 24,
                   }}
                 >
-                  <FontAwesomeIcon
-                    icon={faApple}
-                    size="x"
-                    color="white"
-                    className="flex"
+                  <img
+                    src={apple}
+                    height={16}
+                    width={16}
+                    class="circle"
+                    style={{ marginTop: -4, marginRight: 4 }}
                   />{" "}
                   &nbsp;CMD+D
                 </div>
@@ -197,13 +196,14 @@ class Header extends Component {
             >
               <div>
                 <a href="https://t.me/parasolfinance" class="TheA">
-                  <FontAwesomeIcon
-                    icon={faPaperPlane}
-                    size="xs"
-                    color="white"
-                    className="flex"
+                  <img
+                    src={telegram}
+                    height={16}
+                    width={16}
+                    class="circle"
+                    style={{ marginTop: -4 }}
                   />{" "}
-                  &ensp;t.me/parasolfinance |&ensp;Jown Now
+                  &ensp;t.me/parasolfinance |&ensp;Join Now
                 </a>
               </div>
             </div>

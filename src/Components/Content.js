@@ -3,12 +3,13 @@ import "../css/Index.css";
 import logo1 from "../accset/logo_q-min.png";
 import logo2 from "../accset/logo_p-min.png";
 import logo3 from "../accset/logo-min.png";
-import imgS from "../accset/S.png";
+import imgS from "../accset/S.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faLock, faAngleRight } from "@fortawesome/free-solid-svg-icons";
-
+import lookButton from "../accset/lookButton.svg";
+import HexButton from "../accset/HexButton.svg";
 import { Button } from "reactstrap";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 class Content extends Component {
   render() {
@@ -22,7 +23,7 @@ class Content extends Component {
             paddingLeft: 20,
             paddingRight: 20,
             paddingTop: 24,
-            paddingBottom: 24,
+            paddingBottom: 0,
           }}
         >
           <div
@@ -31,7 +32,8 @@ class Content extends Component {
               width: 668,
               paddingLeft: 0,
               paddingRight: 0,
-              paddingTop: 24,
+              paddingTop: 26,
+              height: 530,
             }}
           >
             <div
@@ -39,13 +41,24 @@ class Content extends Component {
                 marginTop: 0,
                 fontSize: 14,
                 height: 36,
-                paddingTop: 4,
-                paddingLeft: 2,
+                paddingTop: 2,
+                paddingLeft: 4,
+                paddingBottom: 4,
+                alignItems: "center",
               }}
             >
-              <img src={imgS} alt="Northern Lights" width={33} height={30} />{" "}
+              <img src={imgS} alt="Northern Lights" height={28} />{" "}
               &ensp;&ensp;Built on Solana Blockchain &ensp;
-              <FontAwesomeIcon icon={faAngleRight} size="x" color="#B3C4C4" />
+              <FontAwesomeIcon
+                // class="Fontdwon"
+                icon={faAngleRight}
+                size="x"
+                style={{
+                  paddingTop: -5,
+                  marginLeft: 3,
+                  color: "rgb(107 114 128)",
+                }}
+              />
             </div>
 
             <div
@@ -99,33 +112,42 @@ class Content extends Component {
               <Button
                 class="ContainenButon"
                 style={{
-                  width: 264,
+                  width: 263,
                   height: 50,
                   textAlign: "center",
                   backgroundColor: "#b064fe",
-                  borderRadius: 7,
-                  marginRight: 10,
+                  borderRadius: 8,
+                  marginRight: 11,
                   fontWeight: 500,
                 }}
               >
-                <FontAwesomeIcon icon={faLock} /> Browse Upcoming IDOs
+                <img
+                  src={lookButton}
+                  height={20}
+                  class="circle"
+                  style={{ marginTop: -5, marginRight: 3 }}
+                />{" "}
+                Browse Upcoming IDOs
               </Button>
               <Button
                 class="ContainenButon"
                 style={{
-                  width: 243,
-                  height: 52,
+                  width: 242,
+                  height: 50,
                   textAlign: "center",
                   backgroundColor: "#17122b",
-                  borderRadius: 7,
+                  borderRadius: 8,
+                  paddingLeft: 24,
+                  paddingRight: 24,
+                  fontWeight: 500,
                   borderColor: "white",
                 }}
               >
                 <img
-                  src="https://parasol.finance/assets/logos/parasol-logo-mark-full-color-rgb.svg"
-                  alt="Northern Lights"
-                  width={20}
+                  src={HexButton}
                   height={20}
+                  class="circle"
+                  style={{ marginTop: -5, marginRight: 5 }}
                 />{" "}
                 Buy $PSOL With USDC
               </Button>
@@ -134,7 +156,7 @@ class Content extends Component {
 
           <span
             style={{
-              height: 620,
+              height: 600,
               width: "45%",
               position: "relative",
             }}

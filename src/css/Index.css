@@ -4,6 +4,10 @@
   background-color: blueviolet;
 }
 
+.ContainenBody {
+  background: url("https://parasol.finance/assets/ellipses.svg") no-repeat top -200px center #17122b;
+}
+
 .content {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -28,6 +32,12 @@
   background-color: rgb(255 255 255/var(--tw-bg-opacity));
   height: 34,
 
+}
+
+.menuA {
+  color: rgb(229, 231, 235);
+  font-weight: 500 !important;
+  font-size: 14px;
 }
 
 .bg-opacity-50 {
@@ -63,8 +73,8 @@
 
 .image {
   position: absolute;
-  top: -25px;
-  right: -25px;
+  top: -24px;
+  right: -26px;
 }
 
 .textBig {
@@ -87,8 +97,14 @@
   --tw-text-opacity: 0.5 !important;
 }
 
+.Buttonthedu {
+  --tw-bg-opacity: 0.05 !important;
+  background-color: rgb(255 255 255/var(--tw-bg-opacity)) !important;
+}
+
 .textMedium {
-  color: rgb(255 255 255/var(--tw-bg-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(229 231 235/var(--tw-text-opacity)) !important;
   font-weight: 500 !important;
   font-size: 20px;
   line-height: 1.75rem !important;
@@ -96,7 +112,8 @@
 }
 
 .textMedium2 {
-  color: rgb(255 255 255/var(--tw-bg-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(229 231 235/var(--tw-text-opacity)) !important;
   font-weight: 700 !important;
   font-size: 1.125rem !important;
   line-height: 1.75rem !important;
@@ -177,13 +194,14 @@
 
 .buttontim {
   margin-top: 3px;
-  width: 164px;
+  width: 165px;
   height: 42px;
   text-align: center;
   background-color: #b064fe;
   border-radius: 6px;
   border-width: 1px;
-  margin-left: 21px;
+  margin-left: 19px;
+  padding-left: 16px;
   font-weight: 500 !important;
   font-size: 16px;
   color: rgb(255 255 255);
@@ -199,6 +217,8 @@
   margin-top: -5px;
 
 }
+
+
 
 .cardHtuyyyyy {
   width: "33%";
@@ -226,5 +246,26 @@
 .ContainenButon :hover {
   background-color: white;
   color: #984eca;
+
+}
+
+.Fontdwon {
+  --tw-text-opacity: 1 !important;
+  color: rgb(107 114 128/var(--tw-text-opacity)) !important;
+}
+
+.circle {
+  color: white;
+}
+
+.girdrow {
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 181px 181px 181px 181px 181px;
+  gap: 80px;
+  width: 100%;
+  height: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 
 }

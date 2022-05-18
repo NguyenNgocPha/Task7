@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import "../css/Index.css";
+import "../css/Menu.css";
 import { faHand } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock, faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import imgS from "../accset/S.png";
+
+import lookButton from "../accset/lookButton2.svg";
+import imgS from "../accset/S.svg";
 
 import {
   Nav,
@@ -65,40 +68,108 @@ class Menu extends Component {
             Swap
           </a>
 
-          <div class="dropdown" style={{ marginRight: 40 }}>
+          <div class="dropdownMenu" style={{ marginRight: 40 }}>
             <a class="amenu">
               Launchpad&nbsp;
               <FontAwesomeIcon icon={faAngleDown} width={20} height={20} />
             </a>
-
-            <div class="dropdown-content">
-              <div class="row">
-                <div class="col-2" style={{ textAlign: "center" }}>
-                  {" "}
-                  <FontAwesomeIcon icon={faLock} color="#b064fe" size="1x" />
-                </div>
-                <div class="col-7">
-                  <b>Upcoming & Live Project</b>
-                  <p
-                    style={{
-                      fontSize: 12,
-                      fontWeight: "none",
-                    }}
-                  >
-                    All the IDOs running of Parasol Finance
-                  </p>
-                </div>
-                <div
-                  class="col-2"
+            <div class="dropdown-contentMenu">
+              <div
+                class="row"
+                style={{
+                  width: 472,
+                  height: 72,
+                  marginLeft: 0,
+                  marginRight: 0,
+                  marginBottom: 30,
+                }}
+              >
+                <a
                   style={{
-                    textAlign: "center",
-                    backgroundColor: "#402559",
-                    borderRadius: 5,
-                    paddingTop: 5,
+                    display: "flex",
                   }}
                 >
-                  <FontAwesomeIcon icon={faHand} size="1x" color="#b064fe" />{" "}
-                  Claim
+                  <img src={lookButton} height={24} width={24} class="circle" />
+
+                  <div style={{ marginLeft: 16 }}>
+                    <b>Upcoming & Live Project</b>
+                    <p
+                      style={{
+                        fontSize: 12,
+                        fontWeight: "none",
+                      }}
+                    >
+                      All the IDOs running of Parasol Finance
+                    </p>
+                  </div>
+                </a>
+
+                <div
+                  style={{
+                    alignItems: "center",
+                    paddingTop: 12,
+                    paddingBottom: 12,
+                    paddingLeft: 12,
+                    width: 140,
+                    height: 72,
+                  }}
+                >
+                  <div
+                    class="thedu"
+                    style={{
+                      width: 104,
+                      paddingTop: 12,
+                      paddingBottom: 12,
+                      paddingLeft: 16,
+                      paddingRight: 16,
+                      height: 48,
+                      borderRadius: 5,
+                    }}
+                  >
+                    <FontAwesomeIcon
+                      icon={faHand}
+                      style={{ marginRight: 5 }}
+                      color="#b064fe"
+                    />{" "}
+                    Claim
+                  </div>
+                </div>
+              </div>
+
+              <div class="footerThedu">
+                <div
+                  class="row"
+                  style={{
+                    width: 472,
+                    height: 72,
+                    marginLeft: 0,
+                    marginRight: 0,
+                  }}
+                >
+                  <a
+                    style={{
+                      display: "flex",
+                    }}
+                  >
+                    <img
+                      src={lookButton}
+                      height={24}
+                      width={24}
+                      class="circle"
+                    />
+
+                    <div style={{ marginLeft: 16 }}>
+                      <b>Submit Your Project</b>
+                      <p
+                        style={{
+                          fontSize: 12,
+                          fontWeight: "none",
+                        }}
+                      >
+                        You can launch your project in a few clicks
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -108,26 +179,159 @@ class Menu extends Component {
             NFT Access Keys
           </a>
 
-          <div class="dropdown" style={{ marginRight: 40 }}>
+          <div class="dropdownMenu" style={{ marginRight: 40 }}>
             <a class="amenu">
               Tools&nbsp;
               <FontAwesomeIcon icon={faAngleDown} width={20} height={20} />
             </a>
 
-            <div class="dropdown-content">
-              <a href="./">&ensp;Upcoming IDOs</a>
-              <a href="./">&ensp; Finished IDOs</a>
+            <div class="dropdown-contentMenu">
+              <div
+                class="row"
+                style={{
+                  width: 472,
+                  height: 72,
+                  marginLeft: 0,
+                  marginRight: 0,
+                  marginBottom: 30,
+                }}
+              >
+                <a
+                  style={{
+                    display: "flex",
+                    width: 448,
+                  }}
+                >
+                  <img src={lookButton} height={24} width={24} class="circle" />
+
+                  <div style={{ marginLeft: 16 }}>
+                    <b>Upcoming & Live Project</b>
+                    <p
+                      style={{
+                        fontSize: 12,
+                        fontWeight: "none",
+                      }}
+                    >
+                      All the IDOs running of Parasol Finance
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="footerThedu">
+                <div
+                  class="row"
+                  style={{
+                    width: 472,
+                    height: 72,
+                    marginLeft: 0,
+                    marginRight: 0,
+                  }}
+                >
+                  <a
+                    style={{
+                      display: "flex",
+                    }}
+                  >
+                    <img
+                      src={lookButton}
+                      height={24}
+                      width={24}
+                      class="circle"
+                    />
+
+                    <div style={{ marginLeft: 16 }}>
+                      <b>Submit Your Project</b>
+                      <p
+                        style={{
+                          fontSize: 12,
+                          fontWeight: "none",
+                        }}
+                      >
+                        You can launch your project in a few clicks
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="dropdown">
+
+          <div class="dropdownMenu">
             <a class="amenu">
               More&nbsp;
               <FontAwesomeIcon icon={faAngleDown} width={20} height={20} />
             </a>
 
-            <div class="dropdown-content">
-              <a href="./">&ensp;Upcoming IDOs</a>
-              <a href="./">&ensp; Finished IDOs</a>
+            <div class="dropdown-contentMenu">
+              <div
+                class="row"
+                style={{
+                  width: 472,
+                  height: 72,
+                  marginLeft: 0,
+                  marginRight: 0,
+                  marginBottom: 30,
+                }}
+              >
+                <a
+                  style={{
+                    display: "flex",
+                    width: 448,
+                  }}
+                >
+                  <img src={lookButton} height={24} width={24} class="circle" />
+
+                  <div style={{ marginLeft: 16 }}>
+                    <b>Upcoming & Live Project</b>
+                    <p
+                      style={{
+                        fontSize: 12,
+                        fontWeight: "none",
+                      }}
+                    >
+                      All the IDOs running of Parasol Finance
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="footerThedu">
+                <div
+                  class="row"
+                  style={{
+                    width: 472,
+                    height: 72,
+                    marginLeft: 0,
+                    marginRight: 0,
+                  }}
+                >
+                  <a
+                    style={{
+                      display: "flex",
+                    }}
+                  >
+                    <img
+                      src={lookButton}
+                      height={24}
+                      width={24}
+                      class="circle"
+                    />
+
+                    <div style={{ marginLeft: 16 }}>
+                      <b>Submit Your Project</b>
+                      <p
+                        style={{
+                          fontSize: 12,
+                          fontWeight: "none",
+                        }}
+                      >
+                        You can launch your project in a few clicks
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -154,16 +358,18 @@ class Menu extends Component {
             }}
           >
             <a
+              class="menuA"
               style={{
-                width: 104,
-                height: 42,
-                fontSize: 14,
+                marginTop: 5,
+                width: 106,
+                height: 36,
                 marginLeft: 32,
-                justifyItems: "center",
-                paddingTop: 13,
+                alignItems: "center",
+                paddingTop: 8,
+                paddingBottom: 8,
                 paddingLeft: 16,
                 paddingRight: 16,
-                paddingBottom: 10,
+                textDecoration: "none",
               }}
             >
               {" "}
@@ -172,11 +378,17 @@ class Menu extends Component {
                 alt="Northern Lights"
                 width={16}
                 height={16}
+                style={{ marginTop: -3, marginRight: 1 }}
               />
               &ensp;$0.0705
             </a>
             <button class="buttontim" style={{}}>
-              <img src={imgS} alt="Northern Lights" width={16} height={13} />{" "}
+              <img
+                src={imgS}
+                alt="Northern Lights"
+                height={12}
+                style={{ marginTop: -5, marginRight: 4 }}
+              />{" "}
               Connect Wallet
             </button>
           </div>

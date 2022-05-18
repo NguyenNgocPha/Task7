@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import "../css/Index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import imdg from "../accset/pp.png";
-import imdga from "../accset/ppa.png";
-import imdgb from "../accset/ppb.png";
-import imdgc from "../accset/ppc.png";
-import imdgd from "../accset/ppd.png";
-
+import imdg from "../accset/solana.svg";
+import imdga from "../accset/chainlink.svg";
+import imdgb from "../accset/seeded.svg";
+import imdgc from "../accset/game.svg";
+import imdgd from "../accset/secretum.svg";
+import imdgS from "../accset/S.svg";
+import M from "../accset/M.svg";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 
 import {
   faUnlockKeyhole,
   faAngleDown,
-  faMap,
   faAnglesRight,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -35,14 +35,12 @@ class Index extends Component {
       <div
         style={{
           width: "100%",
-          backgroundColor: "#17122b",
-
           textAlign: "center",
         }}
       >
         <div
+          class="ContainenBody"
           style={{
-            backgroundColor: "#17122b",
             width: "100%",
             margin: "auto",
             float: "center",
@@ -62,27 +60,46 @@ class Index extends Component {
             <Menu />
             <Content />
 
-            <div class="row" style={{ textAlign: "justify" }}>
-              <span style={{ width: "20%" }}>
+            <div
+              class="girdrow"
+              style={{ textAlign: "justify", alignItems: "center" }}
+            >
+              <span style={{}}>
                 <img src={imdg} alt="no find"></img>
               </span>
-              <span style={{ width: "20%", textAlign: "center" }}>
+              <span style={{ textAlign: "center" }}>
                 <img src={imdga} alt="no find"></img>
               </span>
-              <span style={{ width: "20%", textAlign: "center" }}>
+              <span style={{ textAlign: "center" }}>
                 <img src={imdgb} alt="no find"></img>
               </span>
-              <span style={{ width: "20%", textAlign: "end" }}>
+              <span style={{ textAlign: "end" }}>
                 <img src={imdgc} alt="no find"></img>
               </span>{" "}
-              <span style={{ width: "20%", textAlign: "end" }}>
+              <span style={{ textAlign: "end" }}>
                 <img src={imdgd} alt="no find"></img>
               </span>
             </div>
 
-            <div class="row" style={{ marginTop: 50 }}>
-              <div class="col-6 " style={{ textAlign: "justify" }}>
-                <h1 style={{ fontWeight: "bolder" }}> Upcoming IDOs</h1>
+            <div
+              class="row"
+              style={{ marginTop: 90, paddingLeft: 20, paddingRight: 20 }}
+            >
+              <div
+                class="col-6 "
+                style={{ textAlign: "start", paddingLeft: 0 }}
+              >
+                <h1
+                  style={{
+                    fontWeight: 800,
+                    fontSize: 36,
+                    letterSpacing: -0.4,
+                    marginBottom: 4,
+                  }}
+                >
+                  {" "}
+                  Upcoming IDOs
+                </h1>
                 <p>
                   We only display IDOs that are featured or have been balloted.
                 </p>
@@ -120,6 +137,7 @@ class Index extends Component {
 
             <div style={{ marginTop: 60 }}>
               <Button
+                class="Buttonthedu"
                 style={{
                   width: 200,
                   height: 60,
@@ -133,8 +151,14 @@ class Index extends Component {
               </Button>
             </div>
 
-            <div class="row" style={{ marginTop: 70 }}>
-              <div class="col-4  " style={{ textAlign: "justify" }}>
+            <div
+              class="row"
+              style={{ marginTop: 70, paddingLeft: 20, paddingRight: 20 }}
+            >
+              <div
+                class="col-4  "
+                style={{ textAlign: "start", paddingLeft: 0 }}
+              >
                 <img
                   src="https://parasol.finance/_next/static/media/parasol-logo-inverted-rgb.b4c85d6b.svg"
                   alt="Northern Lights"
@@ -163,8 +187,14 @@ class Index extends Component {
                 <span style={{ marginRight: 25 }}>
                   <FontAwesomeIcon icon={faDiscord} size="xl" color="white" />
                 </span>
+                <span style={{ marginRight: 25 }}>
+                  <img src={M} size="x" height={25} />
+                </span>
               </div>
-              <div class="col-2" style={{ textAlign: "end", color: "white" }}>
+              <div
+                class="col-2"
+                style={{ textAlign: "end", color: "white", paddingRight: 0 }}
+              >
                 <p>
                   <b>PARASOL FINANCE</b>
                 </p>
@@ -174,7 +204,10 @@ class Index extends Component {
                 <p>Token Address</p>
               </div>
 
-              <div class="col-2 " style={{ textAlign: "end", color: "white" }}>
+              <div
+                class="col-2 "
+                style={{ textAlign: "end", color: "white", paddingRight: 0 }}
+              >
                 <p>
                   <b>USEFUL LINKS</b>
                 </p>
@@ -184,7 +217,10 @@ class Index extends Component {
                 <p>Tiers System</p>
               </div>
 
-              <div class="col-2 " style={{ textAlign: "end", color: "white" }}>
+              <div
+                class="col-2 "
+                style={{ textAlign: "end", color: "white", paddingRight: 0 }}
+              >
                 <p>
                   <b>SOCIAL LINKS</b>
                 </p>
@@ -194,7 +230,10 @@ class Index extends Component {
                 <p>Medium</p>
               </div>
 
-              <div class="col-2 " style={{ textAlign: "end", color: "white" }}>
+              <div
+                class="col-2 "
+                style={{ textAlign: "end", color: "white", paddingRight: 0 }}
+              >
                 <p>
                   <b>LEGAL</b>
                 </p>
@@ -203,7 +242,15 @@ class Index extends Component {
               </div>
             </div>
 
-            <div class="row" style={{ marginTop: 70, paddingBottom: 100 }}>
+            <div
+              class="row"
+              style={{
+                marginTop: 70,
+                paddingBottom: 100,
+                paddingLeft: 20,
+                paddingRight: 20,
+              }}
+            >
               <div class="col-6 " style={{ textAlign: "justify" }}>
                 <p>Copyright © 2022 Parasol Finance. All rights reserved.</p>
               </div>
